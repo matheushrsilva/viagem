@@ -1,3 +1,7 @@
+![GitHub License](https://img.shields.io/github/license/matheushrsilva/viagem)
+![Website](https://img.shields.io/website?url=https%3A%2F%2Fmatheushrsilva.github.io%2Fviagem%2F)
+
+
 # viagem
 este repositorio hospeda o projeto do site viagenseturismo.com
 ## Autor
