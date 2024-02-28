@@ -1,50 +1,277 @@
 /**
-folha de estilo do site viagens e turismo
-@author matheus henrique
+ Folha de estilo do site roboticapratica.com
+ @author Professor José de Assis
+ @link https://joseassis.com.br
 */
 
-/** CSS RESET */
-*  {
+/* google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Orbitron:wght@400..900&display=swap");
+
+
+/* variáveis globais */
+:root {
+    --cinzaLayout: #3c3c3c;
+    --cinzatexto: #434343;
+    --brancoLayout: #ffffff;
+    --backgroudCard:#3c3c3c;
+    --bordalayout: #a1a1a1;
+    --vermelholayout: #c00000;
+}
+
+/* CSS RESET */
+* {
     margin: 0;
     padding: 0;
     border: 0;
 }
 
-
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
-
-
-@import url('https://fonts.googleapis.com/css2?family=Protest+Strike&family=Quicksand:wght@300..700&display=swap');
-
-body{
-    font-family: "orbitron";
-    font-size: 3em
+/* LAYOUT >>>>>>>>>>>>>>>>>>>>>>>>>> */
+html {
+    scroll-behavior: smooth;
 }
 
+body {
+    font-family: "bebas neue", "hind-siliguri";
+    font-size: 1em;
+}
 
-/* smartphone portrait >>>>>>>>>>>>>>>>>>> */
+.Container {
+    margin: 0 auto;
+    padding: 50px 15px 50px 15px;
+}
 
-/* smartphone landscape >>>>>>>>>>>>>>>>> */
-@media (min-width: 576px){
+.Flex,
+.FlexMenu {
+    display: Flex;
+    justify-content: space-between;
+}
+
+.Flex {
+    flex-direction: column;
+}
+/*cartao*/
+.Card {
+    margin-top: 30px;
+    width: 290px;
+    height: 520px;
+    background-color: var
+    (--backgroudCard);
+    border: 5px solid var(--bordalayout);
+    border-radius: 25px;
+    text-align: center;
+}
+.Card img{
+    border-radius: 25px  25px 0px 0px;
+}
+.Card h3{
+    margin: 15px 30px 0px 30px;
+}
+.Card p{
+    padding: 10px 15px 50px 15px;
+    text-align: left;
+    color: var(--cinzatexto);
+}
+.button{
+    text-decoration: none;
+    background-color: var(--vermelholayout);
+    color var (--brancolayout);
+    padding: 10px 80px ;
+    border-radius: 25px;
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+#topo {
+    position:fixed;
+    right:10px;
+    bottom:10px;
+}
+/* Smartphone portrait >>>>>>>>>>>>>>>> */
+/* Cabeçalho */
+header {
+    height: 80px;
+    background-color: aqua;
+}
+
+#logo img {
+    width: 48px;
+    height: 48px;
+    margin: 10px 0px 0px 10px;
+}
+#check {
+    display: none;
+}
+label {
+    font-size: 3em;
+    top:10px;
+    right:10;
+    color: rgba(60,60,60 0.6);
     
 }
+nav ul{
+   list-style: none;
+   background-color: var(--cinzaLayout);
+   height: 100vh;
+   position: fixed;
+   top: 80px;
+   right: -70%;
+   width: 70%;
+   transition: all 1s;
 
-/* tablet portrait >>>>>>>>>>>>>>>>>>>>>> */
-@media (min-width: 992px){
-    
+}
+/*ativar checkbox */
+#check:checked~ul{
+    right: 0;
+}
+nav ul li{
+    border-bottom: 0.5px solid var(--bordalayout);
+    text-align: right;
+    padding: 15px;
 }
 
-/* tablete landscape >>>>>>>>>>>>>>>>>>>> */
-@media (min-width: 992px){
-    
+nav ul li a{
+    text-decoration: none;
+    color: var(--brancoLayout)
+}
+/* Rodapé */
+footer {
+    background-color: var(--cinzaLayout);
+    color: var(--brancoLayout);
+    text-align: center;
 }
 
-/* pcs ou note >>>>>>>>>>>>>>>>>>>>>>>>> */
-@media (min-width: 992px){
-    
+#social {
+    margin-bottom: 25px;
 }
 
-/* pcs ou note full hd >>>>>>>>>>>>>>>>>>> */
-@media (min-width: 992px){
-    
+/* Smartphone landscape >>>>>>>>>>>>>>> */
+@media (min-width: 576px) {
+
+    /* Layout */
+    .Container {
+        max-width: 540px;
+    }
+
+    /* Cabeçalho */
+    header {
+        max-width: 540px;
+        margin: 0 auto;
+    }
+
+    .Flex {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #social {
+        margin: 0;
+    }
 }
+
+/* Tablet portrait >>>>>>>>>>>>>>>>>>>> */
+@media (min-width: 768px) {
+
+    /* Layout */
+    .Container {
+        max-width: 720px;
+    }
+
+    /* Cabeçalho */
+    header {
+        max-width: 720px;
+        height: 100px;
+        background-color: chartreuse;
+    }
+
+    #logo img {
+        width: 48px;
+        height: 48px;
+        margin: 10px 0px 0px 0px;
+    }
+}
+nav ul {
+    top: 100px;
+    right: -50%;
+    width: -50%
+}
+label {
+    font-size: 4em;
+    top: 25px;
+    right: 5px;
+}
+
+/* Tablet landscape >>>>>>>>>>>>>>>>>>> */
+@media (min-width: 992px) {
+
+    /* Layout */
+    .Container {
+        max-width: 960px;
+    }
+
+    /* Cabeçalho */
+    header {
+        max-width: 992px;
+    }
+}
+
+/* PCs ou notebooks HD >>>>>>>>>>>>>>>> */
+@media (min-width: 1200px) {
+    
+    /* Layout */
+    .Container {
+        max-width: 1140px;
+    }
+
+    /* Cabeçalho */
+    header {
+        max-width: 1140px;
+        height: 125px;
+        background-color:chocolate;
+    }
+
+    #logo img {
+        width: 60px;
+        height: 50px;        
+    }
+}
+
+/* PCs, notebooks ou Tv Full HD + >>>> */
+@media (min-width: 1400px) {
+    
+    /* Cabeçalho */
+    header {        
+        height: 150px;
+        background-color:crimson
+    }
+
+    #logo img {
+        width: 144px;
+        height: 144px;       
+    }
+}
+label {
+    display: none;
+
+}
+nav ul{
+    width:100%;
+    position: static;
+    height: auto;
+    background: var(--cinzaLayout);
+    margin-top: 50px;
+}
+nav ul li{
+    border: 0;
+    float: left;
+}
+nav ul li a{
+    color: var(--brancoLayout);
+
+}
+nav ul li a:hover {
+color:#c00000
+}
+
