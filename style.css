@@ -21,6 +21,8 @@
     --vermelhoLayout: #FF0000;
     --AzulclaroLayout: #add8e6;
     --preto: #000000;
+    --amarelolayout: #FFFF00;
+    --verdelayout:#006400;
 }
 
 /* CSS RESET */
@@ -45,6 +47,17 @@ body {
     padding: 50px 15px 50px 15px;
 }
 
+.Container2 {
+    margin: 0 auto;
+    padding: 5px 15px 50px 145px;
+}
+
+.Container3 {
+    margin: 0 auto;
+    padding: 10px 15px 0px 125px;
+}
+
+
 .Flex,
 .FlexMenu {
     display: Flex;
@@ -53,6 +66,7 @@ body {
 
 .Flex {
     flex-direction: column;
+    text-align: center;
 }
 
 /* cartão */
@@ -82,8 +96,8 @@ body {
 
 .Button1 {
     text-decoration: none;
-    background-color: var(--AzulclaroLayout);
-    color: var(--cinzaLayout);
+    background-color: var(--AzulLayout);
+    color: var(--backgroundCard);
     padding: 10px 50px;
     border-radius: 50px;
     font-size: 1.2em;
@@ -93,12 +107,15 @@ body {
 }
 .Button2 {
     text-decoration: none;
-    background-color: var(--AzulclaroLayout);
-    color: var(--cinzaTexto);
+    background-color: var(--AzulLayout);
+    color: var(--backgroundCard);
     padding: 10px 50px;
     border-radius: 25px;
     font-size: 1.2em;
     font-weight: 700;
+    text-align: center;
+
+    
 }
 
 /* Topo */
@@ -113,7 +130,7 @@ body {
 /* Cabeçalho */
 header {
     height: 110px;
-    background-color:rgb(0, 14, 206)
+    background-color:#FFFF00;
 }
 
 #logo img {
@@ -163,16 +180,24 @@ nav ul li a {
 }
 /* banner */
 main{
-    background: url(img/paisagem.jpg);
+    background: url(img/mulher.jpg);
     height: 50vh;
     background-size: cover;
     background-position: center;
 }
 
+main div h1 {
+    color: var(--brancoLayout)
+}
+main div h2 {
+    color: var(--brancoLayout)
+}
+
+
 /* Rodapé */
 footer {
-    background-color: var(--cinzaLayout);
-    color: var(--backgroundCard);
+    background-color: var(--amarelolayout);
+    color: var(--preto);
     text-align: center;
 }
 
@@ -183,12 +208,14 @@ main h1{
     font-family: "orbitron", sans-serif;
     font-weight: 200vh;
     margin-bottom: 50px;
-    color: var(--preto)
+    color: var(--preto);
+    
+    
 }
 
 main h2{
     display: none;
-    color: var(--preto)
+    color: var(--preto);
 }
 
 #social {
@@ -219,6 +246,7 @@ main h2{
 /*banner*/
 main{
     height: 80vh;
+    text-align: center;
 }
 
     /*rodape*/
@@ -267,14 +295,16 @@ main{
 main h1{
     font-size: 2em;
     font-weight: 700;
-    margin-bottom: 25px;
+    
+     
+
 
 }
 main h2{
     display: block;
     font-size: 1,5em;
     font-size: 1em;
-    margin-bottom: 25px;
+    
 
 
 }
@@ -341,13 +371,21 @@ main h2{
 }
 /*banner*/
 main h1{
-    font-size: 1em;
-    text-shadow: #FFFFFF;
+    font-size:1.2em;
+    color:#000000;
+    text-shadow:#f1f3f4;
+    text-align: right;
+    
+    
 }
 
 main h2{
-    font-size: 1.5em;
-    text-shadow: #FFFFFF ;
+    font-size: 1.2em;
+    color:#000000;
+    text-shadow: #f1f3f4;
+    text-align: right;
+    
+
 }
 /* PCs, notebooks ou Tv Full HD + >>>> */
 @media (min-width: 1400px) {
