@@ -13,11 +13,14 @@
 /* variáveis globais */
 :root {
     --cinzaLayout: #3c3c3c;
-    --cinzatexto: #434343;
+    --cinzaTexto: #434343;
     --brancoLayout: #ffffff;
-    --backgroudCard:#3c3c3c;
-    --bordalayout: #a1a1a1;
-    --vermelholayout: #c00000;
+    --backgroundCard: #f1f3f4;
+    --bordaLayout: #a1a1a1;
+    --AzulLayout: #0003c0;
+    --vermelhoLayout: #FF0000;
+    --AzulclaroLayout: #add8e6;
+    --preto: #000000;
 }
 
 /* CSS RESET */
@@ -33,7 +36,7 @@ html {
 }
 
 body {
-    font-family: "bebas neue", "hind-siliguri";
+    font-family: "Open Sans", sans-serif;
     font-size: 1em;
 }
 
@@ -51,95 +54,141 @@ body {
 .Flex {
     flex-direction: column;
 }
-/*cartao*/
+
+/* cartão */
 .Card {
     margin-top: 30px;
-    width: 290px;
+    width: 338px;
     height: 520px;
-    background-color: var
-    (--backgroudCard);
-    border: 5px solid var(--bordalayout);
+    background-color: var(--backgroundCard);
+    border: 1px solid var(--cinzaLayout);
     border-radius: 25px;
     text-align: center;
 }
-.Card img{
-    border-radius: 25px  25px 0px 0px;
+
+.Card img {
+    border-radius: 25px 25px 0px 0px;
 }
-.Card h3{
+
+.Card h3 {
     margin: 15px 30px 0px 30px;
 }
-.Card p{
+
+.Card p {
     padding: 10px 15px 50px 15px;
     text-align: left;
-    color: var(--cinzatexto);
+    color: var(--cinzaLayout);
 }
-.button{
+
+.Button1 {
     text-decoration: none;
-    background-color: var(--vermelholayout);
-    color var (--brancolayout);
-    padding: 10px 80px ;
+    background-color: var(--AzulclaroLayout);
+    color: var(--cinzaLayout);
+    padding: 10px 50px;
+    border-radius: 50px;
+    font-size: 1.2em;
+    font-weight: 600;
+    text-align: center;
+
+}
+.Button2 {
+    text-decoration: none;
+    background-color: var(--AzulclaroLayout);
+    color: var(--cinzaTexto);
+    padding: 10px 50px;
     border-radius: 25px;
     font-size: 1.2em;
     font-weight: 700;
 }
 
+/* Topo */
 #topo {
-    position:fixed;
-    right:10px;
-    bottom:10px;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
 }
+
 /* Smartphone portrait >>>>>>>>>>>>>>>> */
+
 /* Cabeçalho */
 header {
-    height: 80px;
-    background-color: aqua;
+    height: 110px;
+    background-color:rgb(0, 14, 206)
 }
 
 #logo img {
-    width: 48px;
-    height: 48px;
+    width: 100px;
+    height: 100px;
     margin: 10px 0px 0px 10px;
 }
+
 #check {
     display: none;
 }
-label {
-    font-size: 3em;
-    top:10px;
-    right:10;
-    color: rgba(60,60,60 0.6);
-    
-}
-nav ul{
-   list-style: none;
-   background-color: var(--cinzaLayout);
-   height: 100vh;
-   position: fixed;
-   top: 80px;
-   right: -70%;
-   width: 70%;
-   transition: all 1s;
 
+label {
+    font-size: 3em;    
+    position: fixed;
+    top: 25px;
+    right: 3px;
+    color: rgb(0, 0, 0);
 }
-/*ativar checkbox */
-#check:checked~ul{
+
+nav ul {
+    list-style: none;
+    background-color: rgba(34, 34, 34, 0.80);
+    height: 100vh;
+    position: fixed;
+    top: 80px;
+    right: -70%; /*estratégia para recolher o menu*/
+    width: 70%;
+    transition: all 0.5s;
+}
+
+/* ativar o checkbox refernte a ul*/
+#check:checked~ul {
     right: 0;
 }
-nav ul li{
-    border-bottom: 0.5px solid var(--bordalayout);
+
+nav ul li {
+    border-bottom: 0.5px solid var(--backgroundCard);
     text-align: right;
     padding: 15px;
+
 }
 
-nav ul li a{
+nav ul li a {
     text-decoration: none;
-    color: var(--brancoLayout)
+    color: var(--backgroundCard)
 }
+/* banner */
+main{
+    background: url(img/paisagem.jpg);
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+}
+
 /* Rodapé */
 footer {
     background-color: var(--cinzaLayout);
-    color: var(--brancoLayout);
+    color: var(--backgroundCard);
     text-align: center;
+}
+
+
+
+
+main h1{
+    font-family: "orbitron", sans-serif;
+    font-weight: 200vh;
+    margin-bottom: 50px;
+    color: var(--preto)
+}
+
+main h2{
+    display: none;
+    color: var(--preto)
 }
 
 #social {
@@ -158,6 +207,8 @@ footer {
     header {
         max-width: 540px;
         margin: 0 auto;
+        background-color:#0003c0;
+    
     }
 
     .Flex {
@@ -165,6 +216,12 @@ footer {
         justify-content: space-between;
         align-items: center;
     }
+/*banner*/
+main{
+    height: 80vh;
+}
+
+    /*rodape*/
 
     #social {
         margin: 0;
@@ -178,30 +235,50 @@ footer {
     .Container {
         max-width: 720px;
     }
-
+   main h1{
+    font-size: 2.0em;
+   }
     /* Cabeçalho */
     header {
-        max-width: 720px;
+        max-width: 799px;
         height: 100px;
-        background-color: chartreuse;
+        background-color: #0003c0;
+    }
+
+    label {
+        font-size: 4em;       
+        top: 25px;
+        right: 5px;      
     }
 
     #logo img {
-        width: 48px;
-        height: 48px;
+        width: 100px;
+        height: 90px;
         margin: 10px 0px 0px 0px;
     }
+
+    nav ul {
+        top: 100px;
+        right: -50%;
+        width: 50%;
+    }
 }
-nav ul {
-    top: 100px;
-    right: -50%;
-    width: -50%
+/*banner*/
+main h1{
+    font-size: 2em;
+    font-weight: 700;
+    margin-bottom: 25px;
+
 }
-label {
-    font-size: 4em;
-    top: 25px;
-    right: 5px;
+main h2{
+    display: block;
+    font-size: 1,5em;
+    font-size: 1em;
+    margin-bottom: 25px;
+
+
 }
+
 
 /* Tablet landscape >>>>>>>>>>>>>>>>>>> */
 @media (min-width: 992px) {
@@ -219,7 +296,7 @@ label {
 
 /* PCs ou notebooks HD >>>>>>>>>>>>>>>> */
 @media (min-width: 1200px) {
-    
+
     /* Layout */
     .Container {
         max-width: 1140px;
@@ -229,49 +306,62 @@ label {
     header {
         max-width: 1140px;
         height: 125px;
-        background-color:chocolate;
     }
 
     #logo img {
-        width: 60px;
-        height: 50px;        
+        width: 100px;
+        height: 100px;
     }
+
+    label {
+        display: none;
+    }
+
+    nav ul {
+        width: 100%;
+        position: static;
+        height: auto;
+        background-color: var(--AzulLayout);
+        margin-top: 50px;
+    }
+
+    nav ul li {
+        border: 0;
+        float: left;
+    }
+
+    nav ul li a {
+        color: var(--brancoLayout);
+    }
+
+    nav ul li a:hover {
+        color: var(--vermelhoLayout)
+    }
+
+}
+/*banner*/
+main h1{
+    font-size: 1em;
+    text-shadow: #FFFFFF;
 }
 
+main h2{
+    font-size: 1.5em;
+    text-shadow: #FFFFFF ;
+}
 /* PCs, notebooks ou Tv Full HD + >>>> */
 @media (min-width: 1400px) {
-    
+
+
     /* Cabeçalho */
-    header {        
+    header {
         height: 150px;
-        background-color:crimson
+        background-color:#0003c0;
+        
     }
 
     #logo img {
-        width: 144px;
-        height: 144px;       
+        width: 100px;
+        height: 100px;
     }
 }
-label {
-    display: none;
-
-}
-nav ul{
-    width:100%;
-    position: static;
-    height: auto;
-    background: var(--cinzaLayout);
-    margin-top: 50px;
-}
-nav ul li{
-    border: 0;
-    float: left;
-}
-nav ul li a{
-    color: var(--brancoLayout);
-
-}
-nav ul li a:hover {
-color:#c00000
-}
-
