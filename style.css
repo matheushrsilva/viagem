@@ -131,6 +131,7 @@ body {
 header {
     height: 110px;
     background-color:#FFFF00;
+    width: 375px;
 }
 
 #logo img {
@@ -232,9 +233,9 @@ main h2{
 
     /* Cabeçalho */
     header {
-        max-width: 540px;
+        max-width: 600px;
         margin: 0 auto;
-        background-color:#0003c0;
+        width: 1000px;
     
     }
 
@@ -248,7 +249,15 @@ main{
     height: 80vh;
     text-align: center;
 }
+ main h1 {
+    font-size: 2.0em;
+    text-align: right;
+ }
 
+main h2{
+    font-size: 2.0em;
+    text-align: right;
+}
     /*rodape*/
 
     #social {
@@ -270,7 +279,6 @@ main{
     header {
         max-width: 799px;
         height: 100px;
-        background-color: #0003c0;
     }
 
     label {
@@ -294,7 +302,8 @@ main{
 /*banner*/
 main h1{
     font-size: 2em;
-    font-weight: 700;
+    font-weight: 600;
+    
     
      
 
@@ -394,7 +403,7 @@ main h2{
     /* Cabeçalho */
     header {
         height: 150px;
-        background-color:#0003c0;
+        
         
     }
 
