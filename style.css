@@ -47,6 +47,7 @@ body {
     padding: 50px 15px 50px 15px;
 }
 
+
 .Container2 {
     margin: 0 auto;
     padding: 5px 15px 50px 145px;
@@ -55,6 +56,8 @@ body {
 .Container3 {
     margin: 0 auto;
     padding: 10px 15px 0px 125px;
+    
+
 }
 
 
@@ -73,7 +76,7 @@ body {
 .Card {
     margin-top: 30px;
     width: 338px;
-    height: 520px;
+    height: 570px;
     background-color: var(--backgroundCard);
     border: 1px solid var(--cinzaLayout);
     border-radius: 25px;
@@ -82,6 +85,8 @@ body {
 
 .Card img {
     border-radius: 25px 25px 0px 0px;
+    width: 338px;
+    height: 350px;
 }
 
 .Card h3 {
@@ -114,6 +119,8 @@ body {
     font-size: 1.2em;
     font-weight: 700;
     text-align: center;
+    
+    
 
     
 }
@@ -195,6 +202,7 @@ main div h2 {
 }
 
 
+
 /* Rodapé */
 footer {
     background-color: var(--amarelolayout);
@@ -213,12 +221,6 @@ main h1{
     
     
 }
-
-main h2{
-    display: none;
-    color: var(--preto);
-}
-
 #social {
     margin-bottom: 25px;
 }
@@ -257,7 +259,9 @@ main{
 main h2{
     font-size: 2.0em;
     text-align: right;
+    
 }
+
     /*rodape*/
 
     #social {
@@ -313,11 +317,11 @@ main h2{
     display: block;
     font-size: 1,5em;
     font-size: 1em;
-    
-
-
 }
-
+.Container h2{
+font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+color: #0003c0;
+}
 
 /* Tablet landscape >>>>>>>>>>>>>>>>>>> */
 @media (min-width: 992px) {
@@ -390,8 +394,6 @@ main h1{
 
 main h2{
     font-size: 1.2em;
-    color:#000000;
-    text-shadow: #f1f3f4;
     text-align: right;
     
 
