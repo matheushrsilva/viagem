@@ -72,6 +72,15 @@ body {
     text-align: center;
 }
 
+.Flex2 {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    color: #000000;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+
 /* cartão */
 .Card {
     margin-top: 30px;
@@ -82,6 +91,7 @@ body {
     border-radius: 25px;
     text-align: center;
 }
+
 
 .Card img {
     border-radius: 25px 25px 0px 0px;
@@ -123,6 +133,17 @@ body {
     
 
     
+}
+
+.Button3 {
+    text-decoration: none;
+    background-color: var(--AzulLayout);
+    color: var(--backgroundCard);
+    padding: 10px 50px;
+    border-radius: 25px;
+    font-size: 1.2em;
+    font-weight: 700;
+    text-align: center;
 }
 
 /* Topo */
@@ -188,18 +209,28 @@ nav ul li a {
 }
 /* banner */
 main{
-    background: url(img/mulher.jpg);
+    background: url(img/amarelo.jfif);
     height: 50vh;
     background-size: cover;
     background-position: center;
+    
 }
 
 main div h1 {
-    color: var(--brancoLayout)
+    color: var(--preto);
+    text-align: center;
+    
+    
 }
 main div h2 {
-    color: var(--brancoLayout)
+    color: var(--brancoLayout);
+    text-align: center;
+
+   
 }
+
+
+
 
 
 
@@ -258,7 +289,7 @@ main{
 
 main h2{
     font-size: 2.0em;
-    text-align: right;
+    text-align: center;
     
 }
 
@@ -317,10 +348,12 @@ main h2{
     display: block;
     font-size: 1,5em;
     font-size: 1em;
+    
 }
 .Container h2{
 font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 color: #0003c0;
+
 }
 
 /* Tablet landscape >>>>>>>>>>>>>>>>>>> */
@@ -347,7 +380,7 @@ color: #0003c0;
 
     /* Cabeçalho */
     header {
-        max-width: 1140px;
+        max-width: 1200px;
         height: 125px;
     }
 
@@ -374,7 +407,7 @@ color: #0003c0;
     }
 
     nav ul li a {
-        color: var(--brancoLayout);
+        color: var(--preto);
     }
 
     nav ul li a:hover {
@@ -387,14 +420,16 @@ main h1{
     font-size:1.2em;
     color:#000000;
     text-shadow:#f1f3f4;
-    text-align: right;
-    
+    text-align:center;
+
     
 }
 
 main h2{
     font-size: 1.2em;
     text-align: right;
+    text-shadow: #000 0.1em 0.2em 0.3em;
+    text-align: center;
     
 
 }
