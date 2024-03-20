@@ -50,7 +50,7 @@ body {
 
 .Container2 {
     margin: 0 auto;
-    padding: 5px 15px 50px 145px;
+    padding: 5px 0px 50px 15px;
 }
 
 .Container3 {
@@ -65,10 +65,14 @@ body {
 .FlexMenu {
     display: Flex;
     justify-content: space-between;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
 }
 
 .Flex {
     flex-direction: column;
+    align-items: center;
     text-align: center;
 }
 
@@ -85,7 +89,7 @@ body {
 .Card {
     margin-top: 30px;
     width: 338px;
-    height: 570px;
+    height: 600px;
     background-color: var(--backgroundCard);
     border: 1px solid var(--cinzaLayout);
     border-radius: 25px;
@@ -118,7 +122,7 @@ body {
     font-size: 1.2em;
     font-weight: 600;
     text-align: center;
-
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .Button2 {
     text-decoration: none;
@@ -129,6 +133,7 @@ body {
     font-size: 1.2em;
     font-weight: 700;
     text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     
     
 
@@ -144,6 +149,8 @@ body {
     font-size: 1.2em;
     font-weight: 700;
     text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  
 }
 
 /* Topo */
@@ -163,8 +170,8 @@ header {
 }
 
 #logo img {
-    width: 100px;
-    height: 100px;
+    width: 96px;
+    height: 96px;
     margin: 10px 0px 0px 10px;
 }
 
@@ -218,7 +225,8 @@ main{
 
 main div h1 {
     color: var(--preto);
-    text-align: center;
+    text-align: right;
+    
     
     
 }
@@ -251,6 +259,7 @@ main h1{
     color: var(--preto);
     
     
+    
 }
 #social {
     margin-bottom: 25px;
@@ -266,10 +275,16 @@ main h1{
 
     /* Cabeçalho */
     header {
-        max-width: 600px;
         margin: 0 auto;
+        max-width: 100%;
         width: 1000px;
     
+    }
+
+    /* Banner e texto*/
+    .Container2 {
+        margin: 0 auto;
+        padding: 5px 0px 50px 15px;
     }
 
     .Flex {
@@ -307,13 +322,28 @@ main h2{
     .Container {
         max-width: 720px;
     }
+
+    /* Banner e texto*/
+    .Container2 {
+        margin: 0 auto;
+        padding: 5px 450px 500px 15px;
+    }
+
+    .Flex {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
    main h1{
     font-size: 2.0em;
    }
     /* Cabeçalho */
     header {
-        max-width: 799px;
-        height: 100px;
+        margin: 0 auto;
+        max-width: 100%;
+        width: 1000px;
+    
     }
 
     label {
@@ -366,7 +396,22 @@ color: #0003c0;
 
     /* Cabeçalho */
     header {
-        max-width: 992px;
+        margin: 0 auto;
+        max-width: 100%;
+        width: 1200px;
+    
+    }
+    
+    /* Banner e texto*/
+    .Container2 {
+        margin: 0 auto;
+        padding: 5px 450px 500px 15px;
+    }
+
+    .Flex {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
 }
 
@@ -378,10 +423,23 @@ color: #0003c0;
         max-width: 1140px;
     }
 
+    .Container2 {
+        margin: 0 auto;
+        padding: 5px 450px 500px 15px;
+    }
+
+    .Flex {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
     /* Cabeçalho */
     header {
-        max-width: 1200px;
-        height: 125px;
+        margin: 0 auto;
+        max-width: 100%;
+        width: 1600px;
+    
     }
 
     #logo img {
@@ -420,7 +478,7 @@ main h1{
     font-size:1.2em;
     color:#000000;
     text-shadow:#f1f3f4;
-    text-align:center;
+   
 
     
 }
