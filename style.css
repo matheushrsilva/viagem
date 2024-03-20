@@ -22,7 +22,7 @@
     --AzulclaroLayout: #add8e6;
     --preto: #000000;
     --amarelolayout: #FFFF00;
-    --verdelayout:#006400;
+    --verdelayout: #006400;
 }
 
 /* CSS RESET */
@@ -50,13 +50,13 @@ body {
 
 .Container2 {
     margin: 0 auto;
-    padding: 5px 0px 50px 15px;
+    padding: 5px 15px 50px 15px;
 }
 
 .Container3 {
     margin: 0 auto;
-    padding: 10px 15px 0px 125px;
-    
+    padding: 25px 15px 50px 15px;
+
 
 }
 
@@ -82,7 +82,13 @@ body {
     align-items: center;
     color: #000000;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    
+
+}
+
+.FlexCard {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 /* cartão */
@@ -124,6 +130,7 @@ body {
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
 .Button2 {
     text-decoration: none;
     background-color: var(--AzulLayout);
@@ -134,10 +141,10 @@ body {
     font-weight: 700;
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    
-    
 
-    
+
+
+
 }
 
 .Button3 {
@@ -150,7 +157,7 @@ body {
     font-weight: 700;
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-  
+
 }
 
 /* Topo */
@@ -165,7 +172,7 @@ body {
 /* Cabeçalho */
 header {
     height: 110px;
-    background-color:#FFFF00;
+    background-color: #FFFF00;
     width: 375px;
 }
 
@@ -180,11 +187,13 @@ header {
 }
 
 label {
-    font-size: 3em;    
+    font-size: 3em;
     position: fixed;
     top: 25px;
     right: 3px;
     color: rgb(0, 0, 0);
+
+
 }
 
 nav ul {
@@ -193,7 +202,8 @@ nav ul {
     height: 100vh;
     position: fixed;
     top: 80px;
-    right: -70%; /*estratégia para recolher o menu*/
+    right: -70%;
+    /*estratégia para recolher o menu*/
     width: 70%;
     transition: all 0.5s;
 }
@@ -214,27 +224,28 @@ nav ul li a {
     text-decoration: none;
     color: var(--backgroundCard)
 }
+
 /* banner */
-main{
+main {
     background: url(img/amarelo.jfif);
     height: 50vh;
     background-size: cover;
     background-position: center;
-    
+
 }
 
-main div h1 {
+main h1 {
     color: var(--preto);
     text-align: right;
-    
-    
-    
+    font-size: 0.5em;
+
+
 }
-main div h2 {
+main h2 {
     color: var(--brancoLayout);
     text-align: center;
 
-   
+
 }
 
 
@@ -252,15 +263,17 @@ footer {
 
 
 
-main h1{
+main h1 {
     font-family: "orbitron", sans-serif;
     font-weight: 200vh;
     margin-bottom: 50px;
     color: var(--preto);
     
-    
-    
+
+
+
 }
+
 #social {
     margin-bottom: 25px;
 }
@@ -278,7 +291,7 @@ main h1{
         margin: 0 auto;
         max-width: 100%;
         width: 1000px;
-    
+
     }
 
     /* Banner e texto*/
@@ -292,21 +305,23 @@ main h1{
         justify-content: space-between;
         align-items: center;
     }
-/*banner*/
-main{
-    height: 80vh;
-    text-align: center;
-}
- main h1 {
-    font-size: 2.0em;
-    text-align: right;
- }
 
-main h2{
-    font-size: 2.0em;
-    text-align: center;
-    
-}
+    /*banner*/
+    main {
+        height: 80vh;
+        text-align: center;
+    }
+
+    main h1 {
+        font-size: 2.0em;
+        text-align: right;
+    }
+
+    main h2 {
+        font-size: 2.0em;
+        text-align: center;
+
+    }
 
     /*rodape*/
 
@@ -326,7 +341,7 @@ main h2{
     /* Banner e texto*/
     .Container2 {
         margin: 0 auto;
-        padding: 5px 450px 500px 15px;
+        padding: 5px 15px 50px 15px;
     }
 
     .Flex {
@@ -335,21 +350,22 @@ main h2{
         text-align: center;
     }
 
-   main h1{
-    font-size: 2.0em;
-   }
+    main h1 {
+        font-size: 5.0em;
+    }
+
     /* Cabeçalho */
     header {
         margin: 0 auto;
         max-width: 100%;
         width: 1000px;
-    
+
     }
 
     label {
-        font-size: 4em;       
+        font-size: 4em;
         top: 25px;
-        right: 5px;      
+        right: 5px;
     }
 
     #logo img {
@@ -364,25 +380,28 @@ main h2{
         width: 50%;
     }
 }
+
 /*banner*/
-main h1{
+main h1 {
     font-size: 2em;
     font-weight: 600;
-    
-    
-     
+
+
+
 
 
 }
-main h2{
+
+main h2 {
     display: block;
-    font-size: 1,5em;
+    font-size: 1, 5em;
     font-size: 1em;
-    
+
 }
-.Container h2{
-font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-color: #0003c0;
+
+.Container h2 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #0003c0;
 
 }
 
@@ -399,13 +418,13 @@ color: #0003c0;
         margin: 0 auto;
         max-width: 100%;
         width: 1200px;
-    
+
     }
-    
+
     /* Banner e texto*/
     .Container2 {
         margin: 0 auto;
-        padding: 5px 450px 500px 15px;
+        padding: 5px 15px 50px 15px;
     }
 
     .Flex {
@@ -425,7 +444,12 @@ color: #0003c0;
 
     .Container2 {
         margin: 0 auto;
-        padding: 5px 450px 500px 15px;
+        padding: 5px 15px 50px 15px;
+    }
+
+    .Container3 {
+        margin: 0 auto;
+        padding: 25px 15px 50px 700px;
     }
 
     .Flex {
@@ -439,12 +463,12 @@ color: #0003c0;
         margin: 0 auto;
         max-width: 100%;
         width: 1600px;
-    
+
     }
 
     #logo img {
-        width: 100px;
-        height: 100px;
+        width: 200px;
+        height: 200px;
     }
 
     label {
@@ -472,25 +496,30 @@ color: #0003c0;
         color: var(--vermelhoLayout)
     }
 
-}
-/*banner*/
-main h1{
-    font-size:1.2em;
-    color:#000000;
-    text-shadow:#f1f3f4;
-   
+    /*banner*/
+    main h1 {
+        font-size: 3em;
+        color: #000000;
+        text-shadow: #f1f3f4;
 
-    
+
+
+    }
+
+    main h2 {
+        font-size: 1.2em;
+        text-align: right;
+        text-shadow: #000 0.1em 0.2em 0.3em;
+        text-align: center;
+
+
+    }
+
 }
 
-main h2{
-    font-size: 1.2em;
-    text-align: right;
-    text-shadow: #000 0.1em 0.2em 0.3em;
-    text-align: center;
-    
 
-}
+
+
 /* PCs, notebooks ou Tv Full HD + >>>> */
 @media (min-width: 1400px) {
 
@@ -498,8 +527,8 @@ main h2{
     /* Cabeçalho */
     header {
         height: 150px;
-        
-        
+
+
     }
 
     #logo img {
