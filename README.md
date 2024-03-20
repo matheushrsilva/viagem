@@ -5,6 +5,8 @@
 
 # viagem
 este repositorio hospeda o projeto do site viagenseturismo.com
+## acessar site
+![](https://github.com/matheushrsilva/viagem/blob/main/doc/qrcode_matheushrsilva.github.io.png)
 ## Autor
 matheus henrique rodrigues da silva 
 ## links utilizaveis 
