@@ -68,6 +68,7 @@ body {
     flex-direction: row;
     text-align: center;
     align-items: center;
+    
 }
 
 .Flex {
@@ -179,7 +180,7 @@ header {
 #logo img {
     width: 96px;
     height: 96px;
-    margin: 10px 0px 0px 10px;
+    margin: 10px 0px 0px 0px;
 }
 
 #check {
@@ -233,14 +234,17 @@ main {
     background-position: center;
 
 }
-
-main h1 {
-    color: var(--preto);
-    text-align: right;
-    font-size: 0.5em;
-
-
+.Flex .Container3 h1{
+   font-style:oblique;
+   font-size: 1.2em;
+   margin-left: 220px;
+   margin-top: -20px;
 }
+
+    
+
+
+
 main h2 {
     color: var(--brancoLayout);
     text-align: center;
@@ -276,6 +280,31 @@ main h1 {
 
 #social {
     margin-bottom: 25px;
+}
+
+
+
+#textoSobre h2 {
+    margin: 50px 0px;
+    font-size: 1.5em;
+    font-weight:500;
+}
+ 
+#textoSobre h3 {  
+    margin: 20px 0px;
+    font-size: 1.2em;
+    font-weight: 500;
+    border-radius: 50%;
+}
+ 
+#textoSobre ol {
+    margin-left: 20px;
+}
+ 
+#textoSobre h4 {
+    margin-top: 10px;    
+    font-weight: 500;
+    font-size: 1em;
 }
 
 /* Smartphone landscape >>>>>>>>>>>>>>> */
@@ -456,7 +485,10 @@ main h2 {
         flex-direction: column;
         align-items: center;
         text-align: center;
+        padding: 200px 15px 50px 15px;
+        
     }
+        
 
     /* Cabeçalho */
     header {
@@ -501,6 +533,7 @@ main h2 {
         font-size: 3em;
         color: #000000;
         text-shadow: #f1f3f4;
+        margin-top: -150px;
 
 
 
@@ -533,6 +566,6 @@ main h2 {
 
     #logo img {
         width: 100px;
-        height: 100px;
+        height: 0px;
     }
 }
