@@ -42,9 +42,10 @@ body {
     font-size: 1em;
 }
 
+
 .Container {
     margin: 0 auto;
-    padding: 50px 15px 50px 15px;
+    padding: 40px 15px 50px 15px;
 }
 
 
@@ -262,6 +263,7 @@ footer {
     background-color: var(--amarelolayout);
     color: var(--preto);
     text-align: center;
+
 }
 
 
@@ -306,6 +308,8 @@ main h1 {
     font-weight: 500;
     font-size: 1em;
 }
+
+
 
 /* Smartphone landscape >>>>>>>>>>>>>>> */
 @media (min-width: 576px) {
@@ -488,6 +492,14 @@ main h2 {
         padding: 200px 15px 50px 15px;
         
     }
+    .teste1{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 45px 15px 50px 15px;
+        
+    }
+
         
 
     /* Cabeçalho */
@@ -565,7 +577,11 @@ main h2 {
     }
 
     #logo img {
-        width: 100px;
+        
+    }
+    
+    .icones {
+        width: 10px;
         height: 0px;
     }
 }
