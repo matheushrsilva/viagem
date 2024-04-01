@@ -32,10 +32,21 @@
     border: 0;
 }
 
+#imagemSobre img{
+    margin-right: 20px;
+    border-radius: 200%;
+    text-align: right;
+    margin-left: 65px;
+    
+}
+
+
 /* LAYOUT >>>>>>>>>>>>>>>>>>>>>>>>>> */
 html {
     scroll-behavior: smooth;
 }
+
+    
 
 body {
     font-family: "Open Sans", sans-serif;
@@ -69,6 +80,7 @@ body {
     flex-direction: row;
     text-align: center;
     align-items: center;
+   
     
 }
 
@@ -175,7 +187,7 @@ body {
 header {
     height: 110px;
     background-color: #FFFF00;
-    width: 375px;
+    max-width: 100%;
 }
 
 #logo img {
@@ -237,14 +249,11 @@ main {
 }
 .Flex .Container3 h1{
    font-style:oblique;
-   font-size: 1.2em;
-   margin-left: 220px;
-   margin-top: -20px;
+   font-size: 1em;
+    margin-left: 240px;
+    width: 100px;
+   text-align:  left;
 }
-
-    
-
-
 
 main h2 {
     color: var(--brancoLayout);
@@ -319,12 +328,12 @@ main h1 {
         max-width: 540px;
     }
 
+    
+
     /* Cabeçalho */
     header {
         margin: 0 auto;
         max-width: 100%;
-        width: 1000px;
-
     }
 
     /* Banner e texto*/
@@ -360,6 +369,7 @@ main h1 {
 
     #social {
         margin: 0;
+        
     }
 }
 
@@ -391,8 +401,6 @@ main h1 {
     header {
         margin: 0 auto;
         max-width: 100%;
-        width: 1000px;
-
     }
 
     label {
@@ -450,8 +458,6 @@ main h2 {
     header {
         margin: 0 auto;
         max-width: 100%;
-        width: 1200px;
-
     }
 
     /* Banner e texto*/
@@ -471,6 +477,15 @@ main h2 {
 @media (min-width: 1200px) {
 
     /* Layout */
+
+    .Flex .Container3 h1{
+        font-style:oblique;
+        font-size: 3.0em;
+        margin-left: 400px;
+        margin-top: -200px;
+        text-align:  left;
+     }
+
     .Container {
         max-width: 1140px;
     }
@@ -504,10 +519,7 @@ main h2 {
 
     /* Cabeçalho */
     header {
-        margin: 0 auto;
         max-width: 100%;
-        width: 1600px;
-
     }
 
     #logo img {
@@ -524,7 +536,7 @@ main h2 {
         position: static;
         height: auto;
         background-color: var(--AzulLayout);
-        margin-top: 50px;
+        margin-top: -10px;
     }
 
     nav ul li {
@@ -577,11 +589,14 @@ main h2 {
     }
 
     #logo img {
+        width: px;
+        height: 150px;
         
     }
     
     .icones {
-        width: 10px;
-        height: 0px;
+        width: px;
+       
+        
     }
 }
