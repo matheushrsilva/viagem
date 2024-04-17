@@ -67,12 +67,14 @@ body {
 
 .Container3 {
     margin: 0 auto;
-    padding: 25px 15px 50px 15px;
-
-
+    padding: 45px 15px 50px 15px;
+    font-size: 1.5em;
 }
-
-
+.Container4 {
+    margin: 0 auto;
+    padding: 2px 15px 50px 15px;
+    font-size: 1.2em;
+}
 
 
 .Flex,
@@ -106,6 +108,8 @@ body {
     justify-content: space-around;
     flex-wrap: wrap;
 }
+
+
 
 /* cartão */
 .Card {
@@ -186,10 +190,75 @@ body {
 /* Smartphone portrait >>>>>>>>>>>>>>>> */
 
 /* Cabeçalho */
+.carousel-container {
+    overflow: hidden;
+    margin: 0 auto;
+    display: block;
+    scroll-behavior: smooth;
+    /* Adiciona suavização à rolagem */
+}
+
+.carousel {
+    display: flex;
+    width: 100%;
+    margin-left: 10px;
+    /* Adiciona espaço à esquerda */
+    height: 450px;
+    /* Defina a altura do carrossel */
+    overflow-x: auto;
+    z-index: -1;
+    scroll-snap-type: x mandatory;
+    /* Define o tipo de rolagem */
+}
+.Card2 {
+    display: none;
+}
+
+/* Para permitir arrastar para os lados */
+.carousel-container:hover .carousel {
+    cursor: grab;
+}
+
+.carousel-container:active .carousel {
+    cursor: grabbing;
+}
+
+/* Efeito de arrastar */
+.carousel-container:active .carousel {
+    cursor: grabbing;
+    transition: none;
+}
+
+.carousel-container:active .carousel {
+    cursor: grabbing;
+    transition: none;
+}
+
+.carousel-container:active .carousel {
+    cursor: grabbing;
+    transition: none;
+}
+
+.carousel-container:active .carousel {
+    cursor: grabbing;
+    transition: none;
+}
+
 header {
     height: 110px;
     background-color: #FFFF00;
     max-width: 100%;
+}
+
+.Container4 h2.Chamado{
+    background-color:rgb(15, 15, 15,0.5);
+    color: #ffffff;
+    width: 340px;
+    height: 50px;
+    padding: 5px;
+    text-align: center;
+    margin-top: 125px;
+    font-size: 2em;
 }
 
 #logo img {
@@ -253,8 +322,10 @@ main {
    font-style:oblique;
    font-size: 1em;
     margin-left: 200px;
-    width: 100px;
+    width: 150px;
    text-align:  left;
+   margin-top: -40px;
+   
 }
 
 main h2 {
@@ -505,11 +576,12 @@ main h2 {
 
     .Flex .Container3 h1{
         font-style:oblique;
-        font-size: 2.5em;
-        margin-left: 30px;
+        font-size: 1.8em;
+        margin-left: -2px;
         margin-top: -200px;
         text-align:  left;
      }
+   
 
     .Container {
         max-width: 1140px;
